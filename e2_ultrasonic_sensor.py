@@ -2,7 +2,6 @@
 
 import RPi.GPIO as GPIO
 import time
-import requests
 GPIO.setmode(GPIO.BCM)
 
 TRIG = 23 
@@ -32,9 +31,5 @@ pulse_duration = pulse_end - pulse_start
 distance = pulse_duration * 17150
 
 distance = round(distance, 2)
-
-payload = {'l': str(distance)}
-r = requests.get("http://acpm.ingecallvip.com/d/", params=payload)
-print r.content
 
 print "Distance:",distance,"cm"
