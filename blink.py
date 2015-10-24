@@ -6,5 +6,5 @@ GPIO.setup(7, GPIO.OUT) ## Setup GPIO Pin 7 to OUT
 for i in range(0,10):
   GPIO.output(7,True) ## Turn on GPIO pin 7
   time.sleep(1)
-  GPIO.output(7,True) ## Turn off GPIO pin 7
+  GPIO.output(7,False) ## Turn off GPIO pin 7
   time.sleep(1)
