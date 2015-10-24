@@ -1,0 +1,8 @@
+ls:  list source in folder
+cd foldername: change directory to foldername
+pwd: show actual directory
+git clone urls...... copy files from github
+git pull origin master: update files from github
+nano new_file.py: create and edit a new file named new_file.py
+wicd-curses: configuration wifi-connection
+ifconfig: show ipconfigurations
