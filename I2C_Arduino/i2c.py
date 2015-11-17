@@ -26,3 +26,7 @@ time.sleep(1)
 number = readNumber()
 print "Arduino: Hey RPI, I received a digit ", number
 print
+
+
+
+
