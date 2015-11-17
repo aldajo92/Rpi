@@ -7,9 +7,5 @@ git pull origin master: update files from github
 nano new_file.py: create and edit a new file named new_file.py
 wicd-curses: configuration wifi-connection
 ifconfig: show ipconfigurations
-<<<<<<< HEAD:linux_commands.txt
 round(float , n): round a long float number to just n decimals 
-=======
 more <file>.<ext>: shows the file without open it
-
->>>>>>> 691d6b87bb3af54d2c40fd0ef0258f5e28bcb924:linux_commands,txt
