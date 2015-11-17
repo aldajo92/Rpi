@@ -6,3 +6,5 @@ git pull origin master: update files from github
 nano new_file.py: create and edit a new file named new_file.py
 wicd-curses: configuration wifi-connection
 ifconfig: show ipconfigurations
+more <file>.<ext>: shows the file without open it
+
