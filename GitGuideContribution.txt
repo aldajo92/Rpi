@@ -1,0 +1,13 @@
+First: adding all files:
+  # git add --a
+Second: commit files:
+  # git commit -a
+  (Comment the changes)
+Third: Upload the changes:
+  # git push origin master
+  (login)
+  
+For Refresh the project:
+  # git pull origin master
+For check the changes:
+  # git status
