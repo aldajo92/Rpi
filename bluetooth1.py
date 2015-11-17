@@ -33,7 +33,7 @@ while True:
 	a3 = random.randint(a, b)
 	s = "R-"+str(a1)+"-"+str(a2)+"-"+str(a3)+"-A\n"
 	client_sock.send(s)
-	time.sleep(1)
+	time.sleep(0.1)
 
 client_sock.close()
 server_sock.close()

@@ -6,6 +6,7 @@ import os
 import time
 import random
 
+os.system("hciconfig hci0 up")
 os.system("hciconfig hci0 piscan")
 server_sock=bluetooth.BluetoothSocket(bluetooth.RFCOMM)
 port = 1
@@ -59,17 +60,19 @@ def get_data():
 	accel_yout_scaled = accel_yout / 16384.0
 	accel_zout_scaled = accel_zout / 16384.0
 
-	return str(get_x_rotation(accel_xout_scaled, accel_yout_scaled, accel_zout_scaled))+"-"+str(get_y_rotation(accel_xout_scaled, accel_yout_scaled, accel_zout_scaled))
+	return str(get_x_rotation(accel_xout_scaled, accel_yout_scaled, accel_zout_scaled)+100)+"-"+str(get_y_rotation(accel_xout_scaled, accel_yout_scaled, accel_zout_scaled)+100)
+
+time.sleep(2)
 
 s = ""
 
 # Now wake the 6050 up as it starts in sleep mode
 while True:
 	bus.write_byte_data(address, power_mgmt_1, 0)
-	s = "R-"+get_data()+"-0-A"
+	s = "R-"+get_data()+"-0.0-A\n"
 	client_sock.send(s)
 	#print get_data()
-	time.sleep(0.5)
+	time.sleep(0.1)
 
 client_sock.close()
 server_sock.close()

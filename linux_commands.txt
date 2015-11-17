@@ -1,5 +1,6 @@
 ls:  list source in folder
 cd foldername: change directory to foldername
+mv <file> <New file name>: 	change the name of a file
 pwd: show actual directory
 git clone urls...... copy files from github
 git pull origin master: update files from github
