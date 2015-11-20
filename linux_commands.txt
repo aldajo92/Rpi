@@ -10,4 +10,11 @@ wicd-curses: configuration wifi-connection
 ifconfig: show ipconfigurations
 round(float , n): round a long float number to just n decimals 
 more <file>.<ext>: shows the file without open it
+<<<<<<< HEAD
 dpkg -l: show the list of programs installed
+=======
+sudo apt-get install python-dev python-rpi.gpio : installling GPIO library
+sudo apt-get install python-setuptools  :allows to use the module RPIO
+sudo easy_install -U RPIO : More info here https://github.com/metachris/RPIO
+
+>>>>>>> 11875c70edb140e705d622a8aba2cf53b27dce8b
