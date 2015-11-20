@@ -1,0 +1,79 @@
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.2   2148  1312 ?        Ss   03:16   0:02 init [2]  
+root         2  0.0  0.0      0     0 ?        S    03:16   0:00 [kthreadd]
+root         3  0.0  0.0      0     0 ?        S    03:16   0:02 [ksoftirqd/0]
+root         5  0.0  0.0      0     0 ?        S<   03:16   0:00 [kworker/0:0H]
+root         7  0.0  0.0      0     0 ?        S    03:16   0:08 [rcu_preempt]
+root         8  0.0  0.0      0     0 ?        S    03:16   0:00 [rcu_sched]
+root         9  0.0  0.0      0     0 ?        S    03:16   0:00 [rcu_bh]
+root        10  0.0  0.0      0     0 ?        S<   03:16   0:00 [khelper]
+root        11  0.0  0.0      0     0 ?        S    03:16   0:00 [kdevtmpfs]
+root        12  0.0  0.0      0     0 ?        S<   03:16   0:00 [netns]
+root        13  0.0  0.0      0     0 ?        S<   03:16   0:00 [perf]
+root        14  0.0  0.0      0     0 ?        S    03:16   0:00 [khungtaskd]
+root        15  0.0  0.0      0     0 ?        S<   03:16   0:00 [writeback]
+root        16  0.0  0.0      0     0 ?        S<   03:16   0:00 [crypto]
+root        17  0.0  0.0      0     0 ?        S<   03:16   0:00 [bioset]
+root        18  0.0  0.0      0     0 ?        S<   03:16   0:00 [kblockd]
+root        20  0.0  0.0      0     0 ?        S<   03:16   0:00 [rpciod]
+root        21  0.0  0.0      0     0 ?        S    03:16   0:00 [kswapd0]
+root        22  0.0  0.0      0     0 ?        S    03:16   0:00 [fsnotify_mark]
+root        23  0.0  0.0      0     0 ?        S<   03:16   0:00 [nfsiod]
+root        29  0.0  0.0      0     0 ?        S<   03:16   0:00 [kthrotld]
+root        30  0.0  0.0      0     0 ?        S<   03:16   0:00 [VCHIQ-0]
+root        31  0.0  0.0      0     0 ?        S<   03:16   0:00 [VCHIQr-0]
+root        32  0.0  0.0      0     0 ?        S<   03:16   0:00 [VCHIQs-0]
+root        33  0.0  0.0      0     0 ?        S<   03:16   0:00 [iscsi_eh]
+root        34  0.0  0.0      0     0 ?        S<   03:16   0:00 [dwc_otg]
+root        35  0.0  0.0      0     0 ?        S<   03:16   0:00 [DWC Notificatio]
+root        37  0.0  0.0      0     0 ?        S    03:16   0:00 [VCHIQka-0]
+root        38  0.0  0.0      0     0 ?        S<   03:16   0:00 [SMIO]
+root        39  0.0  0.0      0     0 ?        S<   03:16   0:00 [deferwq]
+root        40  0.0  0.0      0     0 ?        S    03:16   0:01 [kworker/u2:2]
+root        41  0.0  0.0      0     0 ?        S    03:16   0:01 [mmcqd/0]
+root        43  0.0  0.0      0     0 ?        S    03:16   0:00 [jbd2/mmcblk0p2-]
+root        44  0.0  0.0      0     0 ?        S<   03:16   0:00 [ext4-rsv-conver]
+root       159  0.0  0.4   2924  2188 ?        Ss   03:16   0:00 udevd --daemon
+root       716  0.0  0.4   2920  2032 ?        S    03:17   0:00 udevd --daemon
+root       719  0.0  0.4   2920  2016 ?        S    03:17   0:00 udevd --daemon
+root      1729  0.0  0.2   1752  1244 ?        S    03:17   0:10 /usr/sbin/ifplugd -i wlan0 -q -f -u0 -d10 -w -I
+root      1732  0.0  0.2   1752  1224 ?        S    03:17   0:10 /usr/sbin/ifplugd -i eth0 -q -f -u0 -d10 -w -I
+root      1738  0.0  0.2   1752  1216 ?        S    03:17   0:02 /usr/sbin/ifplugd -i lo -q -f -u0 -d10 -w -I
+root      1743  0.1  0.0      0     0 ?        S    03:17   0:14 [RTW_CMD_THREAD]
+root      2071  0.0  0.0      0     0 ?        S<   03:17   0:00 [cfg80211]
+root      2216  0.0  0.3   2100  1736 ?        Ss   03:17   0:01 /sbin/dhcpcd
+nobody    2233  0.0  0.3   2020  1392 ?        Ss   03:17   0:00 /usr/sbin/thd --daemon --triggers /etc/triggerhappy/triggers.d/ --socket /var/run/thd.socket --pidfile /var/run/thd.pid --user nobody /dev/input/event*
+root      2235  0.0  0.6  29000  2676 ?        Sl   03:17   0:00 /usr/sbin/rsyslogd -c5
+root      2294  0.0  0.3   3800  1696 ?        Ss   03:17   0:00 /usr/sbin/cron
+102       2312  0.5  0.3   3184  1716 ?        Ss   03:17   1:09 /usr/bin/dbus-daemon --system
+avahi     2346  0.0  0.5   3388  2516 ?        S    03:17   0:00 avahi-daemon: running [raspberrypi.local]
+root      2347  0.0  0.6   4352  3104 ?        Ss   03:17   0:00 /usr/sbin/bluetoothd
+avahi     2349  0.0  0.3   3388  1468 ?        S    03:17   0:00 avahi-daemon: chroot helper
+root      2368  0.0  0.0      0     0 ?        S<   03:17   0:00 [krfcommd]
+root      2428  0.0  1.0   7996  4792 ?        Ss   03:17   0:00 /usr/sbin/cupsd -C /etc/cups/cupsd.conf
+ntp       2440  0.0  0.8   5600  3872 ?        Ss   03:17   0:03 /usr/sbin/ntpd -p /var/run/ntpd.pid -g -c /var/lib/ntp/ntp.conf.dhcp -u 104:107
+root      2506  0.0  0.6   6220  3024 ?        Ss   03:17   0:00 /usr/sbin/sshd
+root      2529  1.4  2.4  24796 10752 ?        S    03:17   3:11 /usr/bin/python -O /usr/share/wicd/daemon/wicd-daemon.py
+root      2557  0.0  0.3   3748  1640 tty1     Ss+  03:17   0:00 /sbin/getty --noclear 38400 tty1
+root      2558  0.0  0.3   3748  1640 tty2     Ss+  03:17   0:00 /sbin/getty 38400 tty2
+root      2559  0.0  0.3   3748  1640 tty3     Ss+  03:17   0:00 /sbin/getty 38400 tty3
+root      2560  0.0  0.3   3748  1640 tty4     Ss+  03:17   0:00 /sbin/getty 38400 tty4
+root      2561  0.0  0.3   3748  1744 tty5     Ss+  03:17   0:00 /sbin/getty 38400 tty5
+root      2562  0.0  0.3   3748  1748 tty6     Ss+  03:17   0:00 /sbin/getty 38400 tty6
+root      2563  0.0  0.3   2068  1588 ?        Ss+  03:17   0:00 /sbin/getty -L ttyAMA0 115200 vt100
+root      2570  0.6  2.4  15156 10732 ?        S    03:17   1:25 /usr/bin/python -O /usr/share/wicd/daemon/monitor.py
+root      2881  0.0  0.7   5652  3124 ?        Ss   03:17   0:00 wpa_supplicant -B -i wlan0 -c /var/lib/wicd/configurations/0026445c569b -Dwext
+root      7796  0.0  1.0   9304  4516 ?        Ss   05:22   0:00 sshd: pi [priv]  
+pi        7803  0.0  0.8   9304  3692 ?        S    05:23   0:02 sshd: pi@pts/0   
+pi        7804  0.0  1.0   6320  4760 pts/0    Ss   05:23   0:04 -bash
+pi        9713  0.0  0.7   4588  3160 pts/0    S+   06:13   0:00 nano kalmanfilter.py
+root      9853  0.0  1.0   9304  4512 ?        Ss   06:17   0:00 sshd: pi [priv]  
+pi        9860  0.1  0.8   9304  3692 ?        S    06:17   0:02 sshd: pi@pts/1   
+pi        9861  0.1  1.0   6296  4740 pts/1    Ss   06:17   0:03 -bash
+root     10090  0.0  0.0      0     0 ?        S    06:22   0:00 [kworker/0:0]
+root     10358  0.0  0.0      0     0 ?        S<   06:25   0:00 [kworker/0:1H]
+root     11245  0.1  0.0      0     0 ?        S    06:49   0:00 [kworker/0:1]
+root     11296  0.0  0.0      0     0 ?        S    06:50   0:00 [kworker/u2:1]
+root     11538  0.0  0.0      0     0 ?        S    06:57   0:00 [kworker/0:2]
+pi       11701  0.0  0.4   4460  2060 pts/1    R+   07:01   0:00 ps aux
+pi       11702  0.0  0.3   3608  1736 pts/1    S+   07:01   0:00 less

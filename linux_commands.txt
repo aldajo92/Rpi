@@ -3,6 +3,9 @@ cd foldername: change directory to foldername
 mv <file> <New file name>: 	change the name of a file
 df : see free space raspi SD card
 pwd: show actual directory
+ps aux : show all process
+kill <PID Number> : kill an specific process
+=========================
 git clone urls...... copy files from github
 git pull origin master: update files from github
 nano new_file.py: create and edit a new file named new_file.py
