@@ -160,7 +160,3 @@ with open('sensor_data2.txt', 'w+') as data_file:
 #    pylab.show()
 
 
-
-
-
-

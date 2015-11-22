@@ -23,8 +23,8 @@ import select
 import os
 import struct
 import logging
-from RPIO import PWM
 import RPIO
+from RPIO import PWM
 import subprocess
 from datetime import datetime
 
