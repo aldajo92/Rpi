@@ -9,7 +9,9 @@ baud = 9600
 serial_port = serial.Serial(port, baud)
 
 def handle_data(data):
+	string = data.split('-')
         print(data)
+	print(string)
 
 def read_from_port(ser):
         while True:
@@ -21,10 +23,5 @@ def read_from_port(ser):
 thread = threading.Thread(target=read_from_port, args=(serial_port,))
 thread.start()
 
-serial_port.write("a1\r\n")
 time.sleep(2)
-serial_port.write("a2\r\n")
-time.sleep(2)
-serial_port.write("b1\r\n")
-time.sleep(2)
-serial_port.write("b2\r\n")
+serial_port.write("request0002 14\r")
