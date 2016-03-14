@@ -3,7 +3,7 @@ import serial
 import time
 
 connected = False
-port = '/dev/ttyUSB2'
+port = '/dev/ttyUSB3'
 baud = 9600
 
 serial_port = serial.Serial(port, baud)
@@ -24,4 +24,10 @@ thread = threading.Thread(target=read_from_port, args=(serial_port,))
 thread.start()
 
 time.sleep(2)
-serial_port.write("request0002 14\r")
+while(True):
+	serial_port.write("request0003 14\r")
+	serial_port.write("request0003 14\r")	
+	time.sleep(0.1)
+	serial_port.write("request0004 14\r")
+	serial_port.write("request0004 14\r")
+	time.sleep(0.1)

@@ -12,7 +12,7 @@ import sys
 myid = "Rpi1"
 
 connected = False
-port = '/dev/ttyUSB2'
+port = '/dev/ttyAMA0'
 baud = 9600
 
 serial_port = serial.Serial(port, baud)
@@ -51,12 +51,11 @@ def send_message_producer(topic, raw_bytes, station):
 
 def handle_data(data):
         string = data.split('-')
-
         topic = "events"
 	#messageToSend = message_serializer("12", "32", "e", 1.3, True)
 	messageToSend = message_serializer(myid, string[0], string[1], float(string[2]), True)
 	raw_bytes = messageToSend
-	print data
+	print string
 	print(raw_bytes)
 	if raw_bytes is not None:
     		send_message_producer(topic, raw_bytes, myid)
@@ -66,13 +65,14 @@ def read_from_port(ser):
                 reading = ser.readline()
                 if(reading != ""):
                         handle_data(reading)
-                        time.sleep(0.1)
+                        time.sleep(0.05)
 
-thread = threading.Thread(target=read_from_port, args=(serial_port,))
-thread.start()
+#thread = threading.Thread(target=read_from_port, args=(serial_port,))
+#thread.start()
 
+while True:
+	handle_data("32-14-1.4-\n\r")
+	time.sleep(0.1)
 
-time.sleep(2)
-serial_port.write("request0003 14\r")
-time.sleep(2)
-serial_port.write("request0004 14\r")
+#time.sleep(4)
+#serial_port.write("request0002 14\r")
